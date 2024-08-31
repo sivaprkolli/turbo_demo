@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="STT">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="Smoke">
+        <parameter name="url" value="https://www.saucedemo.com/"></parameter>
+        <classes>
+
+            <class name="com.stt.loginTests.LoginTest"></class>
+            <class name="com.stt.loginTests.ProductTest"></class>
+            <parameter name="username" value="standard_user"></parameter>
+            <parameter name="password" value="secret_sauce"></parameter>
+
+        </classes>
+    </test>
+    
+</suite>
